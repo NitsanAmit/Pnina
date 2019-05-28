@@ -1,0 +1,19 @@
+{
+  "posts":
+  {
+    "randomId1": {
+      "id" : "randomId1",
+      "categories" : [1,2],
+      "likes": 0,
+      "contentPost" : "some test here omg",
+      "creationDate" : "12/05/19, 22:00"
+    },
+    "randomId2": {
+      "id" : "randomId2",
+      "categories" : [3,4],
+      "likes": 0,
+      "contentPost" : "some test here omg",
+      "creationDate" : "12/05/19, 22:00"
+    }
+  }
+}

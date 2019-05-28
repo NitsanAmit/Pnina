@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E57373</color>
+    <color name="colorPrimaryDark">#F44336</color>
+    <color name="colorAccent">#4DB6AC</color>
+    <color name="backGround">#EF9A9A</color>
+    <color name="toolbar">#C5C2C2</color>
+    <color name="toolBar2">#9E9B9B</color>
+    <color name="chip">#726E6E</color>
+    <color name="post">#ECEAEA</color>
+    <color name="topPost">#BBDEFB</color>
+</resources>

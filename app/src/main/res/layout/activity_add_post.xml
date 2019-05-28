@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:weightSum="7">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/new_post_text"
+        android:inputType="text"
+        android:layout_margin="30dp"
+        android:gravity="top"
+        android:hint="כתבי כאן את הפוסט שלך"
+        android:layout_weight="3"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorHighlight="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:maxLength="240"
+        android:scrollHorizontally="false"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_weight="4"
+        >
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_1"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מדעים מדוייקים"
+            android:layout_margin="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2"
+
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מדעי הרוח"
+            android:layout_marginHorizontal="8dp"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_3"
+
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מדעי החיים"
+            android:layout_marginHorizontal="8dp"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_4"
+
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מדעי החברה"
+            android:layout_marginHorizontal="8dp"
+
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_5"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="רפואה"
+            android:layout_marginHorizontal="8dp"
+
+            />
+        </com.google.android.material.chip.ChipGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_main"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#efefef"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="4dp"
+                android:elevation="2dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/camera_icon"
+                    android:layout_gravity="center"
+                    android:padding="8dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="4dp"
+                android:elevation="2dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="שגרי"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
